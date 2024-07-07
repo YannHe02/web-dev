@@ -1,0 +1,584 @@
+:root{
+    --hintergrund: #f5eec2;
+    --schrift: #396351;
+    --schrift2: #39395f;
+    --gruen: #73a24e;
+    --gruen2: #a9c25d; 
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    background-color: var(--hintergrund);
+}
+
+header{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: var(--schrift);
+    font-family: "Arial";
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--schrift);
+    margin-top: 10px;
+    font-family: "Arial";
+}
+
+h3{
+    color: var(--schrift);
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+h4 {
+    margin: 0%;
+    font-family: "Arial";
+}
+
+h5 {
+    font-family: "Arial";
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: var(--gruen);
+    grid-column: 1/7;
+    grid-row: 3;
+    margin-bottom: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav ul li {
+    display: inline-block;
+    
+}
+
+nav ul li a {
+    font-size: 18px;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: var(--schrift);
+    display: block;
+}
+
+a{
+    color: var(--schrift2);
+    text-decoration: none;
+    font-family: "Arial";
+}
+
+.main{
+    grid-column: 1/4;
+    grid-row: auto;
+    border: 3px solid var(--gruen);
+    border-radius: 12px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+figure{
+    color: var(--schrift);
+    font-size: 15px;
+}
+
+.textSize{
+    font-size: 20px;
+}
+
+p{
+    color: var(--schrift);
+    font-family: "Arial";
+}
+
+
+.bildDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#mainEuroKarte{
+    width: 100%;
+    
+}
+
+#lernen-header{
+    display: grid;
+}
+
+#lernen-stuff{
+    list-style-type: none;
+    display: grid;
+    grid-column: 1/7;
+    grid-row: 4;
+    padding-left: 0%;
+}
+
+#quiz-stuff{
+    list-style-type: none;
+    display: grid;
+    grid-column: 1/7;
+    grid-row: 4;
+    padding-left: 0%;
+}
+
+.container1{
+    position: inline-block;
+    grid-column: 1/4;
+    grid-row: 4/8;
+    border: 3px solid var(--gruen);
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.container1 a{
+    display: block;
+    padding: 5%;
+}
+
+.container2{
+    grid-column: 1/4;
+    grid-row: 8/12;
+    border: 3px solid var(--gruen);
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.container2 a{
+    display: block;
+    padding: 5%;
+}
+
+.container3{
+    grid-column: 1/4;
+    grid-row: 12/16;
+    border: 3px solid var(--gruen);
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.container3 a{
+    display: block;
+    padding: 5%;
+}
+
+footer{
+    background-color: var(--gruen);
+    position: sticky;
+    grid-column: 1/7;
+    grid-row: auto;
+    padding: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 16px;
+}
+
+.footer-widgets {
+    display: grid;
+    padding: 8px;
+    border: 2px solid var(--gruen);
+}
+
+.footer-widgets h4{
+    color: var(--schrift2);
+}
+
+.footer-support {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.footer-widgets a{
+    font-size: 15px;
+    color: white;
+}
+
+.footer-socials {
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+
+.socials-support {
+    padding-top: 4px;
+}
+
+.socials-links a{
+    display: block;
+}
+
+.copyright {
+    padding-top: 4px;
+    padding-left: 4px;
+    align-items: center;
+}
+
+.copyright p{
+    color: var(--schrift);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/*https://www.w3schools.com/cssref/pr_border-collapse.php*/
+table{
+    padding: 10px;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    border: 2px solid var(--schrift2);
+    padding: 6px;
+    font-family: "Arial";
+}
+
+.bold{
+    font-weight: bold;
+    text-decoration: underline;   
+}
+
+#indexH1 {
+    margin-bottom: 10px;
+}
+
+.textCenter{
+    text-align: center;
+    font-family: "Arial";
+}
+
+#auswahlBtn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#auswahlBtn > button {
+    text-align: center;
+    height: 50px;
+    border-color: black;
+    font-size: 13px;
+}
+
+#auswahl1,#auswahl3{
+    grid-column: 1/2;
+}
+
+#auswahl2,#auswahl4{
+    grid-column: 2/3;
+}
+
+#auswahlQuizUeberschrift{
+    font-size: 20px;
+}
+
+#checkBtnAuswahl{
+    color: var(--schrift2);
+    background-color: var(--gruen);
+    width: 17vh;
+    height: 7vh;
+    border-radius: 10px;
+    border: 3px solid var(--gruen);
+    font-size: 2.5vh;
+    visibility: hidden;
+}
+
+#selectCountry{
+    font-size: 17px;
+}
+
+#fehlermeldung{
+    color: red;
+    visibility: hidden;
+}
+
+#hauptstadtInput{
+    text-align: center;
+    margin-bottom: 5vh;
+    border: 2px solid var(--schrift2);
+    visibility: visible;
+    width: 70%;
+    height: 30px;
+}
+
+.flexboxColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#laenderCounter{
+    color: var(--schrift2);
+    font-size: 20px;
+}
+
+#schreibenQuizÜberschrift{
+    color: var(--schrift2);
+    font-size: 20px;
+}
+
+#checkBtn{
+    color: var(--schrift2);
+    background-color: var(--gruen2);
+    width: 17vh;
+    height: 7vh;
+    border-radius: 10px;
+    border: 3px solid var(--gruen2);
+    font-size: 2.5vh;
+}
+
+#lernenEuropakarte{
+    width: 100%;
+}
+
+.mainEigenschaften{
+    grid-column: 1/4;
+    grid-row: auto;
+    border: 3px solid var(--gruen);
+    padding: 5px;
+    overflow: hidden;
+    cursor: grab;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(40px, auto);
+}
+
+.landContainer{
+    grid-column: 1/4;
+    grid-row: auto;
+    border: 2px solid var(--gruen);
+    margin-top: 5px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+}
+
+.landContainer2{
+    grid-column: 1/4;
+    grid-row: auto;
+    border: 2px solid var(--gruen);
+    margin-top: 5px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+}
+
+.landUmrissBild{
+    width: 120px;
+    margin: 5px;
+    height: 85px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.landEigenschaften{
+    margin: 10px;
+}
+
+.inline{
+    display: inline;
+    margin: 5px;
+}
+
+@media (min-width: 600px){
+    body{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    header{
+        grid-column: 1/7;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    nav {
+        position: sticky;
+    }
+
+    .main{
+        grid-column: 1/7;
+    }
+
+    #mainEuroKarte{
+        width: 70%;
+    }
+
+    .container1{
+        grid-column: 1/4;
+        grid-row: 4/8;
+    }
+    
+    .container2{
+        grid-column: 4/7;
+        grid-row: 4/8;
+    }
+    
+    .container3{
+        grid-column: 1/4;
+        grid-row: 8/12;
+    }
+
+    td{
+        padding: 16px;
+    }
+
+    #hauptstadtInput{
+        width: 60%;
+        height: 40px;
+        font-size: 30px;
+    }
+
+    #laenderCounter{
+        font-size: 30px;
+    }
+
+    #schreibenQuizÜberschrift{
+        font-size: 30px;
+    }
+
+    #checkBtn{
+        width: 200px;
+        height: 70px;
+        border-radius: 10px;
+        font-size: 3vh;
+    }
+
+    #checkBtnAuswahl{
+        width: 200px;
+        height: 70px;
+        border-radius: 10px;
+        font-size: 3vh;
+        visibility: hidden;
+    }
+
+    #lernenEuropakarte{
+        height: 90vh;
+        width: auto;
+    }
+
+    .mainEigenschaften{
+        grid-column: 1/8;
+        grid-row: auto;
+        border: 3px solid var(--gruen);
+        padding: 5px;
+        overflow: hidden;
+        cursor: grab;
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 2px;
+        grid-auto-rows: minmax(40px, auto);
+    }
+
+    .landContainer{
+        grid-column: 1/8;
+    }
+
+    .landContainer2{
+        grid-column: 1/8;
+    }
+    
+    figure{
+        font-size: 20px;
+
+    }
+
+    .textSize{
+        font-size: 25px;
+    }
+
+    .landUmrissBild{
+        width: 150px;
+    }
+
+    #auswahlQuizUeberschrift{
+        font-size: 30px;
+    }
+
+    #selectCountry{
+        font-size: 27px;
+    }
+
+    #auswahlBtn > button {
+        text-align: center;
+        height: 50px;
+        border-color: black;
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1000px){
+    #mainEuroKarte{
+        width: 50%;
+    }
+
+    #auswahlBtn {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #auswahlBtn > button {
+        height: 70px;
+        
+    }
+
+    #auswahl1,#auswahl3{
+        grid-column: 2/3;
+    }
+
+    #auswahl2,#auswahl4{
+        grid-column: 3/4;
+    }
+
+    #hauptstadtInput{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1100px){
+    .mainEigenschaften{
+        grid-column: 1/8;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .landContainer{
+        grid-column: 1/4;
+    }
+    .landContainer2{
+        grid-column: 4/8;
+    }
+
+    .textSize{
+        font-size: 30px;
+    }
+}
